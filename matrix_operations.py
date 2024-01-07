@@ -16,10 +16,10 @@ def matrix_operations(matrix1, matrix2, operation):
     elif operation == 'subtract':
         result = np.subtract(matrix1, matrix2)
     elif operation == 'multiply':
-        result = np.multiply(matrix1, matrix2)
+        result = np.dot(matrix1, matrix2)
     elif operation == 'divide':
         result = np.divide(matrix1, matrix2)
     else:
-        raise ValueError("Not Possible")
+        raise ValueError("Error")
     
     return result
