@@ -1,15 +1,12 @@
-import numpy as np
-
-def generate_matrix(array, rows, cols):
-    # Check if the array length is equal to rows*cols
-    if rows * cols != len(array):
-        raise ValueError("Array length must be equal to rows*cols")
-    
-    # Reshape the array into a matrix
-    matrix = np.reshape(array, (rows, cols))
-    
-    return matrix
+from matrix_operations import generate_matrix
+from matrix_operations import matrix_operations
 
 array = [1, 2, 3, 4, 5, 6]
 matrix = generate_matrix(array, 2, 3)
 print(matrix)
+
+matrix1 = generate_matrix([1, 2, 3, 4], 2, 2)
+matrix2 = generate_matrix([5, 6, 7, 8], 2, 2)
+
+result = matrix_operations(matrix1, matrix2, 'add')
+print(result)
