@@ -2,6 +2,13 @@ from matrix_operations import generate_matrix
 from matrix_operations import matrix_operations
 
 # MATH022 M2 PART 1 TEST CASE
+# Dan Floyd L. Arnaiz
+# Kent Clyde M. Monteza
+# Linear Algebra A123
+
+# Instructions
+# To comment in/out a line of code, press Ctrl + / (Windows) or Cmd + / (Mac) so that you can run the code without errors. Run only the test cases that you need.
+
 
 # TEST CASES
 # 1. Generate the Matrices.
@@ -23,22 +30,25 @@ from matrix_operations import matrix_operations
 # print(d)
 
 
-# 2. Performing the Operations.
-# Item no. 1
-item_1A = generate_matrix([2, 1, 3, 3, -2, 1, -1, 0 ,1], 3, 3)
-item_1B  = generate_matrix([1, -2, 2, 1, 4, -2], 3, 2)
-item1 = matrix_operations(item_1A, item_1B, 'add')
-print("Item 1")
-print(item1)
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-# # Item no. 2
+# 2. Performing the Operations
+
+# Item no. 1
+# item_1A = generate_matrix([2, 1, 3, 3, -2, 1, -1, 0 ,1], 3, 3)
+# item_1B  = generate_matrix([1, -2, 2, 1, 4, -2], 3, 2)
+# item1 = matrix_operations(item_1A, item_1B, 'add')
+# print("Item 1")
+# print(item1)
+
+# # # Item no. 2
 # x = generate_matrix([2, 1, 3], 1, 3)
 # y = generate_matrix([-2, 1, -3], 3, 1)
 # item2 = matrix_operations(x, y, 'multiply')
 # print("Item 2")
 # print(item2)
 
-# # Item no. 3
+# Item no. 3
 # F = generate_matrix([2, -1, 3, 0 ,-5, 2], 3, 2)
 # H = generate_matrix([1, 6, -1, -2, 0, -3], 3, 2)
 # item3 = matrix_operations(F, H, 'add')
